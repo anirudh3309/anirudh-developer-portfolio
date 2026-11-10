@@ -1,74 +1,133 @@
 # 👨‍💻 ANIRUDH | DEVELOPER PORTFOLIO
 
-### Computer Engineering Student | Python Developer | Technology Enthusiast
+<p align="center">
+  <b>COMPUTER ENGINEERING STUDENT · PYTHON DEVELOPER IN PROGRESS</b>
+</p>
 
-Welcome to my developer portfolio! I enjoy programming, building practical applications, solving problems and exploring new technologies.
-
----
-
-## 🚀 About Me
-
-- 🎓 Computer Engineering Diploma Student
-- 💻 Interested in Python and Software Development
-- 🧠 Learning programming and problem-solving
-- 🔨 Building practical software applications
-- 🎯 Working towards becoming a professional software developer
-
-## 🛠️ Tech Stack
-
-| Technology | Area |
-|---|---|
-| Python | Programming |
-| HTML5 | Web Development |
-| CSS3 | Web Design |
-| Git & GitHub | Version Control |
-| Windows | Development Environment |
-
-## 📂 Featured Projects
-
-### 01. Expense Tracker
-A Python application for managing and tracking personal expenses.
-
-**Technology:** Python
-
-### 02. JARVIS Lite
-A Python-based personal assistant project exploring desktop automation and useful commands.
-
-**Technology:** Python
-
-### 03. Student Toolkit
-A Python application designed to provide useful utilities for students.
-
-**Technology:** Python
+<p align="center">
+  <a href="https://anirudh3309.github.io/anirudh-developer-portfolio/">
+    <b>🌐 VISIT MY LIVE PORTFOLIO</b>
+  </a>
+  &nbsp; | &nbsp;
+  <a href="https://github.com/anirudh3309">
+    <b>GITHUB PROFILE</b>
+  </a>
+</p>
 
 ---
 
-## 🌐 Portfolio Website
+## 👋 About Me
 
-[Visit My Live Portfolio](https://anirudh3309.github.io/anirudh-developer-portfolio/)
+Hello! I'm Anirudh, a Computer Engineering diploma student interested in programming, software development and technology.
 
-## 📊 GitHub
+I enjoy learning by building practical projects and improving my skills through experimentation.
 
-[Explore My Repositories](https://github.com/anirudh3309)
+- 🐍 Learning Python programming
+- 🌐 Exploring HTML and CSS
+- 💻 Building beginner-friendly software applications
+- 🧠 Practising problem-solving
+- 🚀 Continuously learning new technologies
+
+## 🛠️ Technologies & Tools
+
+![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
+![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
+![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
+![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)
+
+## 🚀 Featured Projects
+
+### 1. Expense Tracker
+
+A command-line Python application for recording and reviewing personal expenses.
+
+**Features**
+- Add and save expenses locally
+- Organise expenses into categories
+- View expense records and totals
+- Export records to CSV
+
+**Technology:** Python, JSON, CSV
+
+[View Source Code](./expense_tracker.py)
+
+### 2. JARVIS Lite
+
+A local command-line personal assistant for simple notes and task management.
+
+**Features**
+- Save personal notes
+- Add tasks
+- View saved notes and tasks
+- Mark tasks as completed
+- Store data locally in JSON
+
+**Technology:** Python, JSON
+
+[View Source Code](./jarvis_lite.py)
+
+### 3. Student Toolkit
+
+A command-line toolkit containing useful utilities for students.
+
+**Features**
+- Basic calculator
+- Marks percentage calculator
+- Random password generator
+- Input validation
+
+**Technology:** Python, secrets, string
+
+[View Source Code](./student_toolkit.py)
 
 ---
 
-## 🎯 Current Learning Goals
+## ▶️ How to Run the Python Projects
 
-- Improve Python programming.
-- Learn advanced programming concepts.
-- Explore web development.
-- Build more useful applications.
-- Improve software development skills.
+1. Install Python 3.
+2. Download or clone this repository.
+3. Open a terminal in the project folder.
+4. Run the project you want:
+
+```bash
+python expense_tracker.py
+```
+
+```bash
+python jarvis_lite.py
+```
+
+```bash
+python student_toolkit.py
+```
+
+These projects use Python's standard library and do not require additional packages.
+
+## 🌐 Live Portfolio
+
+Explore my portfolio website:
+
+https://anirudh3309.github.io/anirudh-developer-portfolio/
+
+## 🎯 Learning Goals
+
+- Improve Python programming fundamentals
+- Build more practical applications
+- Learn web development
+- Develop stronger problem-solving skills
+- Explore software development tools
+
+## 📫 Connect
+
+- GitHub: https://github.com/anirudh3309
+- Portfolio: https://anirudh3309.github.io/anirudh-developer-portfolio/
 
 ---
 
-## 📫 Connect With Me
+<p align="center">
+  <b>KEEP LEARNING. KEEP BUILDING. 🚀</b>
+</p>
 
-**GitHub:** [@anirudh3309](https://github.com/anirudh3309)
-
----
-
-⭐ *Learning every day. Building one project at a time.*
-
-**Created by Anirudh | 2026**
+<p align="center">
+  Created by Anirudh | 2026
+</p>
