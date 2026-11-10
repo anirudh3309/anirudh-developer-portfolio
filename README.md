@@ -1,133 +1,185 @@
-# 👨‍💻 ANIRUDH | DEVELOPER PORTFOLIO
+# 🚀 Anirudh | Developer Portfolio
 
 <p align="center">
-  <b>COMPUTER ENGINEERING STUDENT · PYTHON DEVELOPER IN PROGRESS</b>
+  <img src="https://img.shields.io/badge/Python-Developer-3776AB?style=for-the-badge&logo=python&logoColor=white" />
+  <img src="https://img.shields.io/badge/Computer-Engineering-00AEEF?style=for-the-badge" />
+  <img src="https://img.shields.io/badge/Projects-Open%20Source-success?style=for-the-badge&logo=github" />
+</p>
+
+<p align="center">
+  <b>A collection of practical software projects, programming experiments and development work.</b>
 </p>
 
 <p align="center">
   <a href="https://anirudh3309.github.io/anirudh-developer-portfolio/">
-    <b>🌐 VISIT MY LIVE PORTFOLIO</b>
+    🌐 VIEW LIVE PORTFOLIO
   </a>
   &nbsp; | &nbsp;
   <a href="https://github.com/anirudh3309">
-    <b>GITHUB PROFILE</b>
+    GITHUB PROFILE
   </a>
 </p>
 
 ---
 
-## 👋 About Me
+## 👨‍💻 Introduction
 
-Hello! I'm Anirudh, a Computer Engineering diploma student interested in programming, software development and technology.
+Welcome to my developer portfolio!
 
-I enjoy learning by building practical projects and improving my skills through experimentation.
+I'm Anirudh, a Computer Engineering diploma student from India interested in Python programming, software development, automation and web technologies.
 
-- 🐍 Learning Python programming
-- 🌐 Exploring HTML and CSS
-- 💻 Building beginner-friendly software applications
-- 🧠 Practising problem-solving
-- 🚀 Continuously learning new technologies
+This repository showcases my practical coding projects and my progress as a developer.
 
-## 🛠️ Technologies & Tools
+My goal is to build useful, reliable and user-friendly software while continuously improving my technical skills.
 
-![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
-![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
-![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
-![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)
+## 📂 Projects
 
-## 🚀 Featured Projects
+### 01. 💰 Expense Tracker
 
-### 1. Expense Tracker
-
-A command-line Python application for recording and reviewing personal expenses.
+A command-line expense management application built with Python.
 
 **Features**
-- Add and save expenses locally
-- Organise expenses into categories
-- View expense records and totals
-- Export records to CSV
+- Add personal expenses
+- Organize expenses into categories
+- View recorded expenses
+- Generate expense summaries
+- Export expense records to CSV
+- Store records locally using JSON
 
 **Technology:** Python, JSON, CSV
 
-[View Source Code](./expense_tracker.py)
+[Explore Project](expense_tracker.py)
 
-### 2. JARVIS Lite
+### 02. 🤖 JARVIS Lite
 
-A local command-line personal assistant for simple notes and task management.
+A lightweight local personal assistant built using Python.
 
 **Features**
 - Save personal notes
-- Add tasks
-- View saved notes and tasks
+- Create tasks
+- View saved notes
+- View task lists
 - Mark tasks as completed
-- Store data locally in JSON
+- Store information locally using JSON
 
 **Technology:** Python, JSON
 
-[View Source Code](./jarvis_lite.py)
+[Explore Project](jarvis_lite.py)
 
-### 3. Student Toolkit
+### 03. 🎓 Student Toolkit
 
-A command-line toolkit containing useful utilities for students.
+A Python-based collection of useful student utilities.
 
 **Features**
 - Basic calculator
 - Marks percentage calculator
-- Random password generator
-- Input validation
+- Secure random password generator
 
-**Technology:** Python, secrets, string
+**Technology:** Python, Secrets, String
 
-[View Source Code](./student_toolkit.py)
+[Explore Project](student_toolkit.py)
 
 ---
 
-## ▶️ How to Run the Python Projects
+## 🛠️ Technologies Used
 
-1. Install Python 3.
-2. Download or clone this repository.
-3. Open a terminal in the project folder.
-4. Run the project you want:
+| Technology | Purpose |
+|---|---|
+| Python | Application development |
+| HTML5 | Web structure |
+| CSS3 | Web styling |
+| JSON | Local data storage |
+| CSV | Data export |
+| Git | Version control |
+| GitHub | Code hosting |
+
+## ⚙️ Getting Started
+
+### Requirements
+
+- Python 3.10 or newer
+- Git (optional)
+- Windows, macOS or Linux
+
+### Installation
+
+**1. Clone the repository**
+
+```bash
+git clone https://github.com/anirudh3309/anirudh-developer-portfolio.git
+```
+
+**2. Enter the project directory**
+
+```bash
+cd anirudh-developer-portfolio
+```
+
+**3. Run any project**
+
+Expense Tracker:
 
 ```bash
 python expense_tracker.py
 ```
 
+JARVIS Lite:
+
 ```bash
 python jarvis_lite.py
 ```
+
+Student Toolkit:
 
 ```bash
 python student_toolkit.py
 ```
 
-These projects use Python's standard library and do not require additional packages.
+These projects use Python's standard library and do not require external packages.
 
-## 🌐 Live Portfolio
+## 📁 Repository Structure
 
-Explore my portfolio website:
+```text
+anirudh-developer-portfolio/
+│
+├── README.md
+├── index.html
+├── expense_tracker.py
+├── jarvis_lite.py
+├── student_toolkit.py
+└── anirudh-github-professional-pack (2).zip
+```
 
-https://anirudh3309.github.io/anirudh-developer-portfolio/
+## 🎯 Development Goals
 
-## 🎯 Learning Goals
+- Build more practical Python applications
+- Improve programming and debugging skills
+- Explore full-stack web development
+- Develop a more advanced JARVIS assistant
+- Learn software engineering principles
+- Improve project documentation and code quality
 
-- Improve Python programming fundamentals
-- Build more practical applications
-- Learn web development
-- Develop stronger problem-solving skills
-- Explore software development tools
+## 🔮 Future Improvements
 
-## 📫 Connect
+- Expand existing Python applications
+- Improve user interfaces
+- Add more productivity tools
+- Develop additional web projects
+- Introduce automated testing
 
-- GitHub: https://github.com/anirudh3309
-- Portfolio: https://anirudh3309.github.io/anirudh-developer-portfolio/
+## 👨‍💻 Developer
+
+**Anirudh**
+
+Computer Engineering Student | Aspiring Software Developer
+
+- GitHub: [@anirudh3309](https://github.com/anirudh3309)
+- Portfolio: [Live Website](https://anirudh3309.github.io/anirudh-developer-portfolio/)
 
 ---
 
 <p align="center">
-  <b>KEEP LEARNING. KEEP BUILDING. 🚀</b>
-</p>
-
-<p align="center">
-  Created by Anirudh | 2026
+  <b>Designed, developed and maintained by Anirudh.</b>
+  <br/>
+  ⭐ Thank you for exploring my projects!
 </p>
