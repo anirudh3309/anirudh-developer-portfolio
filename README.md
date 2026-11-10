@@ -1,39 +1,67 @@
-# 👨‍💻 Anirudh | Python Developer Portfolio
+# 👨‍💻 ANIRUDH | DEVELOPER PORTFOLIO
 
-Welcome to my GitHub portfolio!
+### Computer Engineering Student | Python Developer | Technology Enthusiast
 
-I'm Anirudh, a Computer Engineering diploma student passionate about Python programming, software development, and building practical technology projects.
+Welcome to my developer portfolio! I enjoy programming, building practical applications, solving problems and exploring new technologies.
 
-## 🚀 My Projects
+---
 
-### 1. Expense Tracker
-A Python project focused on tracking and managing personal expenses.
+## 🚀 About Me
+
+- 🎓 Computer Engineering Diploma Student
+- 💻 Interested in Python and Software Development
+- 🧠 Learning programming and problem-solving
+- 🔨 Building practical software applications
+- 🎯 Working towards becoming a professional software developer
+
+## 🛠️ Tech Stack
+
+| Technology | Area |
+|---|---|
+| Python | Programming |
+| HTML5 | Web Development |
+| CSS3 | Web Design |
+| Git & GitHub | Version Control |
+| Windows | Development Environment |
+
+## 📂 Featured Projects
+
+### 01. Expense Tracker
+A Python application for managing and tracking personal expenses.
 
 **Technology:** Python
 
-### 2. JARVIS Lite
-A beginner-friendly Python personal assistant project.
+### 02. JARVIS Lite
+A Python-based personal assistant project exploring desktop automation and useful commands.
 
 **Technology:** Python
 
-### 3. Student Toolkit
-A Python project designed to provide useful tools for students.
+### 03. Student Toolkit
+A Python application designed to provide useful utilities for students.
 
 **Technology:** Python
 
-## 🛠️ Technical Skills
+---
 
-- Python Programming
-- Problem Solving
-- Basic Software Development
-- Computer Fundamentals
+## 🌐 Portfolio Website
 
-## 🎯 Current Goals
+[Visit My Live Portfolio](https://anirudh3309.github.io/anirudh-developer-portfolio/)
 
-- Improve my Python programming skills.
-- Build practical software projects.
-- Learn Web Development.
-- Explore new technologies.
+## 📊 GitHub
+
+[Explore My Repositories](https://github.com/anirudh3309)
+
+---
+
+## 🎯 Current Learning Goals
+
+- Improve Python programming.
+- Learn advanced programming concepts.
+- Explore web development.
+- Build more useful applications.
+- Improve software development skills.
+
+---
 
 ## 📫 Connect With Me
 
@@ -41,6 +69,6 @@ A Python project designed to provide useful tools for students.
 
 ---
 
-⭐ Thanks for visiting my portfolio!
+⭐ *Learning every day. Building one project at a time.*
 
-*Built with passion by Anirudh.*
+**Created by Anirudh | 2026**
