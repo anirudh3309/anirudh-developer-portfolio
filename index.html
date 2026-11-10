@@ -1,0 +1,340 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Anirudh | Python Developer</title>
+<meta name="description" content="Anirudh's developer portfolio featuring Python projects and software development.">
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    background: #080d18;
+    color: #e8edf7;
+    font-family: Arial, sans-serif;
+    line-height: 1.7;
+}
+
+nav {
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 18px 8%;
+    background: rgba(8,13,24,.95);
+    border-bottom: 1px solid #202b40;
+}
+
+.logo {
+    color: #55aaff;
+    font-size: 23px;
+    font-weight: bold;
+}
+
+nav a {
+    color: #c5d0e0;
+    text-decoration: none;
+    margin-left: 22px;
+    font-size: 14px;
+}
+
+nav a:hover {
+    color: #55aaff;
+}
+
+.hero {
+    min-height: 85vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 80px 10%;
+    background:
+    radial-gradient(ellipse at 80% 30%, #12305a 0%, transparent 45%);
+}
+
+.tag {
+    color: #55aaff;
+    letter-spacing: 3px;
+    font-size: 13px;
+    margin-bottom: 20px;
+}
+
+.hero h1 {
+    font-size: clamp(42px, 7vw, 76px);
+    line-height: 1.15;
+    max-width: 850px;
+}
+
+.hero h1 span {
+    color: #55aaff;
+}
+
+.hero p {
+    color: #a7b3c8;
+    max-width: 600px;
+    margin: 25px 0;
+    font-size: 17px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 12px 25px;
+    background: #2389ed;
+    color: white;
+    border-radius: 7px;
+    text-decoration: none;
+    margin: 7px 8px 7px 0;
+    transition: .3s;
+}
+
+.btn:hover {
+    background: #0864bd;
+    transform: translateY(-3px);
+}
+
+.btn.secondary {
+    background: transparent;
+    border: 1px solid #40516d;
+}
+
+section {
+    padding: 85px 10%;
+}
+
+.section-title {
+    font-size: 34px;
+    margin-bottom: 35px;
+}
+
+.section-title span {
+    color: #55aaff;
+}
+
+.about {
+    background: #0c1423;
+}
+
+.about p {
+    max-width: 800px;
+    color: #a7b3c8;
+    font-size: 17px;
+}
+
+.skills {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 14px;
+}
+
+.skill {
+    padding: 12px 22px;
+    background: #111e32;
+    border: 1px solid #243b5c;
+    border-radius: 8px;
+    color: #75baff;
+}
+
+.projects {
+    background: #0c1423;
+}
+
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 22px;
+}
+
+.card {
+    background: #111d30;
+    border: 1px solid #263b59;
+    border-radius: 12px;
+    padding: 28px;
+    transition: .3s;
+}
+
+.card:hover {
+    transform: translateY(-7px);
+    border-color: #55aaff;
+}
+
+.card h3 {
+    color: #72b9ff;
+    margin-bottom: 12px;
+}
+
+.card p {
+    color: #a7b3c8;
+    margin-bottom: 20px;
+}
+
+.card a {
+    color: #55aaff;
+    text-decoration: none;
+}
+
+.contact {
+    text-align: center;
+}
+
+.contact p {
+    color: #a7b3c8;
+    margin-bottom: 20px;
+}
+
+footer {
+    text-align: center;
+    padding: 25px;
+    background: #050912;
+    color: #8492a8;
+    border-top: 1px solid #202b40;
+}
+
+@media(max-width: 650px) {
+    nav {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    nav a {
+        margin: 0 7px;
+    }
+
+    section {
+        padding: 65px 7%;
+    }
+
+    .hero {
+        padding: 70px 7%;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<nav>
+    <div class="logo">ANIRUDH.DEV</div>
+    <div>
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+    </div>
+</nav>
+
+<header class="hero" id="home">
+    <div class="tag">COMPUTER ENGINEERING STUDENT</div>
+
+    <h1>Hello, I'm <span>Anirudh.</span><br>
+    Python Developer.</h1>
+
+    <p>
+        I enjoy building practical software projects,
+        exploring technology and continuously improving
+        my programming skills.
+    </p>
+
+    <div>
+        <a href="#projects" class="btn">Explore My Projects</a>
+        <a href="https://github.com/anirudh3309"
+           target="_blank" class="btn secondary">
+           GitHub Profile
+        </a>
+    </div>
+</header>
+
+<section class="about" id="about">
+    <h2 class="section-title">About <span>Me</span></h2>
+
+    <p>
+        I'm Anirudh, a Computer Engineering diploma student
+        from India with an interest in Python programming
+        and software development.
+        <br><br>
+        I believe in learning by building. My goal is to
+        develop useful applications, improve my technical
+        knowledge and grow as a developer.
+    </p>
+</section>
+
+<section id="skills">
+    <h2 class="section-title">Technical <span>Skills</span></h2>
+
+    <div class="skills">
+        <div class="skill">Python</div>
+        <div class="skill">HTML</div>
+        <div class="skill">CSS</div>
+        <div class="skill">Problem Solving</div>
+        <div class="skill">GitHub</div>
+        <div class="skill">Windows</div>
+    </div>
+</section>
+
+<section class="projects" id="projects">
+    <h2 class="section-title">My <span>Projects</span></h2>
+
+    <div class="project-grid">
+
+        <div class="card">
+            <h3>01. Expense Tracker</h3>
+            <p>
+                A Python application project focused on
+                tracking and managing personal expenses.
+            </p>
+            <a href="https://github.com/anirudh3309/anirudh-developer-portfolio/blob/main/expense_tracker.py"
+               target="_blank">View Source Code →</a>
+        </div>
+
+        <div class="card">
+            <h3>02. JARVIS Lite</h3>
+            <p>
+                A personal assistant project built with
+                Python to explore desktop automation.
+            </p>
+            <a href="https://github.com/anirudh3309/anirudh-developer-portfolio/blob/main/jarvis_lite.py"
+               target="_blank">View Source Code →</a>
+        </div>
+
+        <div class="card">
+            <h3>03. Student Toolkit</h3>
+            <p>
+                A Python project designed to provide
+                useful tools and utilities for students.
+            </p>
+            <a href="https://github.com/anirudh3309/anirudh-developer-portfolio/blob/main/student_toolkit.py"
+               target="_blank">View Source Code →</a>
+        </div>
+
+    </div>
+</section>
+
+<section class="contact" id="contact">
+    <h2 class="section-title">Let's <span>Connect</span></h2>
+
+    <p>
+        Interested in my projects or want to connect?
+        Visit my GitHub profile.
+    </p>
+
+    <a href="https://github.com/anirudh3309"
+       target="_blank" class="btn">
+       Visit My GitHub
+    </a>
+</section>
+
+<footer>
+    © 2026 Anirudh | Designed and Built with HTML & CSS
+</footer>
+
+</body>
+</html>
