@@ -4,10 +4,28 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Anirudh | Python Developer</title>
-<meta name="description" content="Anirudh's developer portfolio featuring Python projects and software development.">
+
+<title>Anirudh | Developer Portfolio</title>
+
+<meta name="description" content="Anirudh's personal developer portfolio showcasing Python projects, software development and technical skills.">
+
+<meta name="theme-color" content="#080b12">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
 
 <style>
+:root {
+    --bg: #080b12;
+    --surface: #101621;
+    --surface2: #141e2c;
+    --text: #f1f5fc;
+    --muted: #98a6ba;
+    --blue: #54a6ff;
+    --border: #202d40;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -16,204 +34,385 @@
 }
 
 body {
-    background: #080d18;
-    color: #e8edf7;
-    font-family: Arial, sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    font-family: 'DM Sans', sans-serif;
     line-height: 1.7;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.container {
+    width: 85%;
+    max-width: 1150px;
+    margin: auto;
 }
 
 nav {
     position: sticky;
     top: 0;
-    z-index: 10;
+    z-index: 100;
+    background: rgba(8,11,18,.92);
+    backdrop-filter: blur(15px);
+    border-bottom: 1px solid var(--border);
+}
+
+.nav-inner {
+    min-height: 75px;
     display: flex;
-    justify-content: space-between;
     align-items: center;
-    padding: 18px 8%;
-    background: rgba(8,13,24,.95);
-    border-bottom: 1px solid #202b40;
+    justify-content: space-between;
 }
 
 .logo {
-    color: #55aaff;
+    font-family: 'Space Grotesk', sans-serif;
     font-size: 23px;
-    font-weight: bold;
+    font-weight: 700;
 }
 
-nav a {
-    color: #c5d0e0;
-    text-decoration: none;
-    margin-left: 22px;
+.logo span,
+.highlight {
+    color: var(--blue);
+}
+
+.nav-links {
+    display: flex;
+    gap: 28px;
+}
+
+.nav-links a {
+    color: var(--muted);
     font-size: 14px;
+    transition: .25s;
 }
 
-nav a:hover {
-    color: #55aaff;
+.nav-links a:hover {
+    color: var(--blue);
 }
 
 .hero {
     min-height: 85vh;
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    padding: 80px 10%;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
     background:
-    radial-gradient(ellipse at 80% 30%, #12305a 0%, transparent 45%);
+      radial-gradient(ellipse at 80% 25%, rgba(38,110,190,.19), transparent 45%),
+      radial-gradient(ellipse at 10% 90%, rgba(25,70,130,.10), transparent 40%);
 }
 
-.tag {
-    color: #55aaff;
-    letter-spacing: 3px;
+.hero-content {
+    max-width: 800px;
+    padding: 100px 0;
+}
+
+.status {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    padding: 8px 15px;
+    border: 1px solid var(--border);
+    border-radius: 30px;
+    color: #b7c5d8;
+    font-size: 12px;
+    margin-bottom: 28px;
+}
+
+.dot {
+    height: 8px;
+    width: 8px;
+    background: #38d995;
+    border-radius: 50%;
+    box-shadow: 0 0 12px #38d995;
+}
+
+.eyebrow {
+    color: var(--blue);
     font-size: 13px;
-    margin-bottom: 20px;
+    font-weight: 700;
+    letter-spacing: 3px;
+    margin-bottom: 15px;
 }
 
-.hero h1 {
-    font-size: clamp(42px, 7vw, 76px);
-    line-height: 1.15;
-    max-width: 850px;
-}
-
-.hero h1 span {
-    color: #55aaff;
+h1 {
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: clamp(43px, 7vw, 78px);
+    line-height: 1.13;
+    letter-spacing: -3px;
 }
 
 .hero p {
-    color: #a7b3c8;
-    max-width: 600px;
-    margin: 25px 0;
+    color: var(--muted);
+    max-width: 620px;
     font-size: 17px;
+    margin: 25px 0 32px;
+}
+
+.buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 13px;
 }
 
 .btn {
     display: inline-block;
-    padding: 12px 25px;
-    background: #2389ed;
-    color: white;
+    padding: 12px 23px;
     border-radius: 7px;
-    text-decoration: none;
-    margin: 7px 8px 7px 0;
-    transition: .3s;
+    font-weight: 600;
+    font-size: 14px;
+    background: var(--blue);
+    color: #07101b;
+    transition: .25s;
 }
 
 .btn:hover {
-    background: #0864bd;
     transform: translateY(-3px);
+    box-shadow: 0 8px 25px rgba(84,166,255,.2);
 }
 
-.btn.secondary {
+.btn-outline {
     background: transparent;
-    border: 1px solid #40516d;
+    border: 1px solid var(--border);
+    color: var(--text);
 }
 
 section {
-    padding: 85px 10%;
+    padding: 95px 0;
+}
+
+.section-label {
+    color: var(--blue);
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 3px;
+    margin-bottom: 10px;
 }
 
 .section-title {
-    font-size: 34px;
-    margin-bottom: 35px;
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: clamp(30px, 4vw, 42px);
+    margin-bottom: 38px;
 }
 
-.section-title span {
-    color: #55aaff;
+.about-grid {
+    display: grid;
+    grid-template-columns: 1.4fr 1fr;
+    gap: 45px;
+    align-items: start;
 }
 
-.about {
-    background: #0c1423;
+.about-text {
+    color: var(--muted);
+    font-size: 16px;
 }
 
-.about p {
-    max-width: 800px;
-    color: #a7b3c8;
-    font-size: 17px;
+.info-card {
+    padding: 28px;
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 12px;
 }
 
-.skills {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 14px;
+.info-card h3 {
+    margin-bottom: 18px;
+    font-family: 'Space Grotesk', sans-serif;
+}
+
+.info-item {
+    padding: 12px 0;
+    border-bottom: 1px solid var(--border);
+    color: var(--muted);
+    font-size: 14px;
+}
+
+.info-item:last-child {
+    border: none;
+}
+
+.skills-section,
+.projects-section {
+    background: #0b111b;
+    border-top: 1px solid #172131;
+    border-bottom: 1px solid #172131;
+}
+
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 15px;
 }
 
 .skill {
-    padding: 12px 22px;
-    background: #111e32;
-    border: 1px solid #243b5c;
-    border-radius: 8px;
-    color: #75baff;
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 9px;
+    padding: 19px;
+    color: #cbd9ec;
+    transition: .25s;
 }
 
-.projects {
-    background: #0c1423;
+.skill:hover {
+    border-color: var(--blue);
+    transform: translateY(-4px);
 }
 
-.project-grid {
+.skill small {
+    display: block;
+    color: var(--muted);
+    margin-top: 5px;
+    font-size: 12px;
+}
+
+.projects-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
     gap: 22px;
 }
 
-.card {
-    background: #111d30;
-    border: 1px solid #263b59;
+.project-card {
+    background: var(--surface);
+    border: 1px solid var(--border);
     border-radius: 12px;
-    padding: 28px;
+    padding: 27px;
     transition: .3s;
+    display: flex;
+    flex-direction: column;
+    min-height: 290px;
 }
 
-.card:hover {
+.project-card:hover {
     transform: translateY(-7px);
-    border-color: #55aaff;
+    border-color: var(--blue);
 }
 
-.card h3 {
-    color: #72b9ff;
+.project-number {
+    color: var(--blue);
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    margin-bottom: 15px;
+}
+
+.project-card h3 {
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 21px;
     margin-bottom: 12px;
 }
 
-.card p {
-    color: #a7b3c8;
-    margin-bottom: 20px;
+.project-card p {
+    color: var(--muted);
+    font-size: 14px;
+    margin-bottom: 22px;
 }
 
-.card a {
-    color: #55aaff;
-    text-decoration: none;
+.tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-bottom: 23px;
 }
 
-.contact {
+.tags span {
+    background: #19283a;
+    color: #9dcaff;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 11px;
+}
+
+.project-link {
+    color: var(--blue);
+    font-size: 13px;
+    font-weight: 700;
+    margin-top: auto;
+}
+
+.goals-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+}
+
+.goal {
+    padding: 20px;
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 9px;
+    color: var(--muted);
+}
+
+.goal strong {
+    color: var(--text);
+    display: block;
+    margin-bottom: 5px;
+}
+
+.contact-box {
+    background:
+      radial-gradient(ellipse at 50% 0%, rgba(44,112,190,.18), transparent 65%),
+      var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 15px;
+    padding: 60px 25px;
     text-align: center;
 }
 
-.contact p {
-    color: #a7b3c8;
-    margin-bottom: 20px;
+.contact-box p {
+    color: var(--muted);
+    margin: 15px auto 25px;
+    max-width: 550px;
 }
 
 footer {
+    padding: 28px 0;
+    border-top: 1px solid var(--border);
+    color: var(--muted);
+    font-size: 13px;
     text-align: center;
-    padding: 25px;
-    background: #050912;
-    color: #8492a8;
-    border-top: 1px solid #202b40;
 }
 
-@media(max-width: 650px) {
-    nav {
+@media(max-width: 750px) {
+    .container {
+        width: 90%;
+    }
+
+    .nav-inner {
         flex-direction: column;
-        gap: 10px;
+        padding: 15px 0;
+        gap: 12px;
     }
 
-    nav a {
-        margin: 0 7px;
+    .nav-links {
+        gap: 15px;
+        flex-wrap: wrap;
+        justify-content: center;
     }
 
-    section {
-        padding: 65px 7%;
+    .nav-links a {
+        font-size: 12px;
     }
 
     .hero {
-        padding: 70px 7%;
+        min-height: 75vh;
+    }
+
+    h1 {
+        letter-spacing: -1.5px;
+    }
+
+    .about-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .goals-grid {
+        grid-template-columns: 1fr;
+    }
+
+    section {
+        padding: 70px 0;
     }
 }
 </style>
@@ -222,118 +421,331 @@ footer {
 <body>
 
 <nav>
-    <div class="logo">ANIRUDH.DEV</div>
-    <div>
-        <a href="#home">Home</a>
-        <a href="#about">About</a>
-        <a href="#skills">Skills</a>
-        <a href="#projects">Projects</a>
-        <a href="#contact">Contact</a>
+    <div class="container nav-inner">
+        <a href="#home" class="logo">ANIRUDH<span>.DEV</span></a>
+
+        <div class="nav-links">
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#skills">Skills</a>
+            <a href="#projects">Projects</a>
+            <a href="#goals">Goals</a>
+            <a href="#contact">Contact</a>
+        </div>
     </div>
 </nav>
 
 <header class="hero" id="home">
-    <div class="tag">COMPUTER ENGINEERING STUDENT</div>
+    <div class="container">
+        <div class="hero-content">
 
-    <h1>Hello, I'm <span>Anirudh.</span><br>
-    Python Developer.</h1>
+            <div class="status">
+                <span class="dot"></span>
+                Computer Engineering Student
+            </div>
 
-    <p>
-        I enjoy building practical software projects,
-        exploring technology and continuously improving
-        my programming skills.
-    </p>
+            <div class="eyebrow">HELLO, WORLD. I'M</div>
 
-    <div>
-        <a href="#projects" class="btn">Explore My Projects</a>
-        <a href="https://github.com/anirudh3309"
-           target="_blank" class="btn secondary">
-           GitHub Profile
-        </a>
+            <h1>
+                Anirudh.<br>
+                <span class="highlight">Aspiring Developer.</span>
+            </h1>
+
+            <p>
+                I build practical Python applications, explore
+                software development and turn ideas into useful
+                digital experiences. Currently learning and growing
+                one project at a time.
+            </p>
+
+            <div class="buttons">
+                <a href="#projects" class="btn">Explore Projects ↗</a>
+
+                <a href="https://github.com/anirudh3309"
+                   target="_blank"
+                   rel="noopener noreferrer"
+                   class="btn btn-outline">
+                   GitHub Profile ↗
+                </a>
+            </div>
+
+        </div>
     </div>
 </header>
 
-<section class="about" id="about">
-    <h2 class="section-title">About <span>Me</span></h2>
+<section id="about">
+    <div class="container">
 
-    <p>
-        I'm Anirudh, a Computer Engineering diploma student
-        from India with an interest in Python programming
-        and software development.
-        <br><br>
-        I believe in learning by building. My goal is to
-        develop useful applications, improve my technical
-        knowledge and grow as a developer.
-    </p>
-</section>
+        <div class="section-label">01 / ABOUT</div>
+        <h2 class="section-title">A little about me.</h2>
 
-<section id="skills">
-    <h2 class="section-title">Technical <span>Skills</span></h2>
+        <div class="about-grid">
 
-    <div class="skills">
-        <div class="skill">Python</div>
-        <div class="skill">HTML</div>
-        <div class="skill">CSS</div>
-        <div class="skill">Problem Solving</div>
-        <div class="skill">GitHub</div>
-        <div class="skill">Windows</div>
+            <div class="about-text">
+                <p>
+                    I'm Anirudh, a Computer Engineering diploma
+                    student from India with a strong interest in
+                    Python programming, software development and
+                    technology.
+                </p>
+
+                <br>
+
+                <p>
+                    I enjoy learning by building real projects.
+                    From creating small productivity applications
+                    to exploring desktop automation, I believe
+                    every project is an opportunity to improve.
+                </p>
+
+                <br>
+
+                <p>
+                    My current focus is strengthening my programming
+                    fundamentals, writing cleaner code and developing
+                    useful applications.
+                </p>
+            </div>
+
+            <div class="info-card">
+                <h3>Quick Information</h3>
+
+                <div class="info-item">
+                    <strong>Education:</strong> Computer Engineering Diploma
+                </div>
+
+                <div class="info-item">
+                    <strong>Primary Language:</strong> Python
+                </div>
+
+                <div class="info-item">
+                    <strong>Interests:</strong> Software & Automation
+                </div>
+
+                <div class="info-item">
+                    <strong>Location:</strong> India
+                </div>
+
+                <div class="info-item">
+                    <strong>GitHub:</strong> @anirudh3309
+                </div>
+            </div>
+
+        </div>
     </div>
 </section>
 
-<section class="projects" id="projects">
-    <h2 class="section-title">My <span>Projects</span></h2>
+<section class="skills-section" id="skills">
+    <div class="container">
 
-    <div class="project-grid">
+        <div class="section-label">02 / SKILLS</div>
+        <h2 class="section-title">Tools I work with.</h2>
 
-        <div class="card">
-            <h3>01. Expense Tracker</h3>
-            <p>
-                A Python application project focused on
-                tracking and managing personal expenses.
-            </p>
-            <a href="https://github.com/anirudh3309/anirudh-developer-portfolio/blob/main/expense_tracker.py"
-               target="_blank">View Source Code →</a>
+        <div class="skills-grid">
+
+            <div class="skill">
+                Python
+                <small>Programming</small>
+            </div>
+
+            <div class="skill">
+                HTML5
+                <small>Web Structure</small>
+            </div>
+
+            <div class="skill">
+                CSS3
+                <small>Web Styling</small>
+            </div>
+
+            <div class="skill">
+                JSON
+                <small>Data Storage</small>
+            </div>
+
+            <div class="skill">
+                CSV
+                <small>Data Handling</small>
+            </div>
+
+            <div class="skill">
+                Git & GitHub
+                <small>Version Control</small>
+            </div>
+
+            <div class="skill">
+                Problem Solving
+                <small>Logical Thinking</small>
+            </div>
+
+            <div class="skill">
+                Windows
+                <small>Development Environment</small>
+            </div>
+
         </div>
-
-        <div class="card">
-            <h3>02. JARVIS Lite</h3>
-            <p>
-                A personal assistant project built with
-                Python to explore desktop automation.
-            </p>
-            <a href="https://github.com/anirudh3309/anirudh-developer-portfolio/blob/main/jarvis_lite.py"
-               target="_blank">View Source Code →</a>
-        </div>
-
-        <div class="card">
-            <h3>03. Student Toolkit</h3>
-            <p>
-                A Python project designed to provide
-                useful tools and utilities for students.
-            </p>
-            <a href="https://github.com/anirudh3309/anirudh-developer-portfolio/blob/main/student_toolkit.py"
-               target="_blank">View Source Code →</a>
-        </div>
-
     </div>
 </section>
 
-<section class="contact" id="contact">
-    <h2 class="section-title">Let's <span>Connect</span></h2>
+<section class="projects-section" id="projects">
+    <div class="container">
 
-    <p>
-        Interested in my projects or want to connect?
-        Visit my GitHub profile.
-    </p>
+        <div class="section-label">03 / PROJECTS</div>
+        <h2 class="section-title">Things I've built.</h2>
 
-    <a href="https://github.com/anirudh3309"
-       target="_blank" class="btn">
-       Visit My GitHub
-    </a>
+        <div class="projects-grid">
+
+            <article class="project-card">
+
+                <div class="project-number">PROJECT 01</div>
+
+                <h3>Expense Tracker</h3>
+
+                <p>
+                    A command-line Python application for recording,
+                    organizing and reviewing personal expenses.
+                    Includes category summaries and CSV export.
+                </p>
+
+                <div class="tags">
+                    <span>Python</span>
+                    <span>JSON</span>
+                    <span>CSV</span>
+                </div>
+
+                <a class="project-link"
+                   href="https://github.com/anirudh3309/anirudh-developer-portfolio/blob/main/expense_tracker.py"
+                   target="_blank"
+                   rel="noopener noreferrer">
+                   View Source Code ↗
+                </a>
+
+            </article>
+
+            <article class="project-card">
+
+                <div class="project-number">PROJECT 02</div>
+
+                <h3>JARVIS Lite</h3>
+
+                <p>
+                    A lightweight local personal assistant for
+                    saving notes, managing tasks and tracking
+                    completed activities using Python.
+                </p>
+
+                <div class="tags">
+                    <span>Python</span>
+                    <span>JSON</span>
+                    <span>Automation</span>
+                </div>
+
+                <a class="project-link"
+                   href="https://github.com/anirudh3309/anirudh-developer-portfolio/blob/main/jarvis_lite.py"
+                   target="_blank"
+                   rel="noopener noreferrer">
+                   View Source Code ↗
+                </a>
+
+            </article>
+
+            <article class="project-card">
+
+                <div class="project-number">PROJECT 03</div>
+
+                <h3>Student Toolkit</h3>
+
+                <p>
+                    A collection of useful student utilities
+                    including a calculator, marks percentage
+                    calculator and secure password generator.
+                </p>
+
+                <div class="tags">
+                    <span>Python</span>
+                    <span>Secrets</span>
+                    <span>Utilities</span>
+                </div>
+
+                <a class="project-link"
+                   href="https://github.com/anirudh3309/anirudh-developer-portfolio/blob/main/student_toolkit.py"
+                   target="_blank"
+                   rel="noopener noreferrer">
+                   View Source Code ↗
+                </a>
+
+            </article>
+
+        </div>
+    </div>
+</section>
+
+<section id="goals">
+    <div class="container">
+
+        <div class="section-label">04 / WHAT'S NEXT</div>
+        <h2 class="section-title">Currently growing.</h2>
+
+        <div class="goals-grid">
+
+            <div class="goal">
+                <strong>01. Python Development</strong>
+                Improving programming fundamentals and code quality.
+            </div>
+
+            <div class="goal">
+                <strong>02. Web Development</strong>
+                Learning modern web technologies and design.
+            </div>
+
+            <div class="goal">
+                <strong>03. Automation</strong>
+                Building useful desktop tools and assistants.
+            </div>
+
+            <div class="goal">
+                <strong>04. Real Projects</strong>
+                Turning ideas into practical software applications.
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<section id="contact">
+    <div class="container">
+
+        <div class="contact-box">
+
+            <div class="section-label">05 / CONTACT</div>
+
+            <h2 class="section-title">
+                Let's connect.
+            </h2>
+
+            <p>
+                Interested in my work, have a project idea,
+                or simply want to connect? Feel free to
+                visit my GitHub profile.
+            </p>
+
+            <a href="https://github.com/anirudh3309"
+               target="_blank"
+               rel="noopener noreferrer"
+               class="btn">
+               Visit My GitHub ↗
+            </a>
+
+        </div>
+    </div>
 </section>
 
 <footer>
-    © 2026 Anirudh | Designed and Built with HTML & CSS
+    <div class="container">
+        © 2026 Anirudh. Designed and built with HTML & CSS.
+        <br>
+        Learning. Building. Improving.
+    </div>
 </footer>
 
 </body>
